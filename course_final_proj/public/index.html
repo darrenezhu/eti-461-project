@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdnd ETI 461</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="icon" type="image/x-icon" href="./images/projfavicon.png">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="grid grid-cols-3 px-16 items-center w-screen h-20 border-b-[1px] fixed top-0 bg-white">
+            <a href="index.html" class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                    <path
+                        d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
+                    <path fill-rule="evenodd"
+                        d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="font-bold text-xl">Airdnd</span>
+            </a>
+            <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+                <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+                <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+                <button class="text-sm font-medium text-gray-500 px-2">Add guests</button>
+                <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+            </div>
+            <div class="flex justify-end items-center gap-8">
+                <button class="text-sm font-medium">Airdnd your home</button>
+                <span class="material-symbols-outlined">language</span>
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20">
+                    <i class="fa-solid fa-bars"></i>
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px]" onclick="location.href='register.html'"><i class="fa-solid fa-user"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- stay types -->
+        <div class="flex items-center w-screen h-24 space-x-5 fixed top-20 bg-white border-b-[1px]">
+            <div class="flex items-center justify-center space-x-5">
+                <div class="flex flex-col items-center gap-1 pl-16">
+                    <img src="./images/trending.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Trending</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/rooms.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Rooms</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/countryside.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Countryside</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/lakefront.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Lakefront</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/cabins.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Cabins</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/mansions.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Mansions</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/beachfront.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Beachfront</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/amazingviews.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Amazing Views</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/amazingpools.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Pools</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/treehouses.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Treehouses</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/tinyhomes.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Tiny homes</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                    <img src="./images/luxe.jpeg" alt="" class="h-6 w-6">
+                    <p class="text-xs">Luxe</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <span class="material-symbols-outlined border rounded-full">arrow_forward_ios</span>
+            <div class="flex justify-around items-center rounded-xl h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">tune</span>
+                <p class="text-xs font-medium pr-2">Filters</p>
+            </div>
+            <div class="flex justify-around items-center rounded-xl h-12 w-30 border">
+                <p class="text-xs font-medium p-3">Display total before taxes</p>
+                <span class="material-symbols-outlined pr-3">toggle_off</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- listings -->
+    <div class="grid grid-cols-4 mt-48 mx-14">
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=1"><img src="./images/listing1.png" class="w-72 h-72 rounded-xl" alt="Listing 1"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Rhinebeck, New York</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">85 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 3 - 7</p>
+            <p class="text-sm font-medium mt-1">$540 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=2"><img src="./images/listing2.png" class="w-72 h-72 rounded-xl" alt="Listing 2"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">24 miles away</p>
+            <p class="text-sm font-light text-gray-500">June 13 - 17</p>
+            <p class="text-sm font-medium mt-1">$85 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=3"><img src="./images/listing3.png" class="w-72 h-72 rounded-xl" alt="Listing 3"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">18 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 1 - 5</p>
+            <p class="text-sm font-medium mt-1">$128 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=4"><img src="./images/listing4.png" class="w-72 h-72 rounded-xl" alt="Listing 4"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">15 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 10 - 14</p>
+            <p class="text-sm font-medium mt-1">$69 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=5"><img src="./images/listing5.png" class="w-72 h-72 rounded-xl" alt="Listing 5"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Kerhonkson, New York</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">112 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 26 - 30</p>
+            <p class="text-sm font-medium mt-1">$207 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=6"><img src="./images/listing6.png" class="w-72 h-72 rounded-xl" alt="Listing 6"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">26 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 14 - 18</p>
+            <p class="text-sm font-medium mt-1">$85 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=7"><img src="./images/listing7.png" class="w-72 h-72 rounded-xl" alt="Listing 7"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Washington, District of Columbia</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">139 miles away</p>
+            <p class="text-sm font-light text-gray-500">Jun 18 - 22</p>
+            <p class="text-sm font-medium mt-1">$135 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=8"><img src="./images/listing8.png" class="w-72 h-72 rounded-xl" alt="Listing 8"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Princeton, New Jersey</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">45 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 12 - 16</p>
+            <p class="text-sm font-medium mt-1">$175 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=9"><img src="./images/listing9.png" class="w-72 h-72 rounded-xl" alt="Listing 9"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">25 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 20 - 24</p>
+            <p class="text-sm font-medium mt-1">$112 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=10"><img src="./images/listing10.png" class="w-72 h-72 rounded-xl" alt="Listing 10"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">29 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 14 - 18</p>
+            <p class="text-sm font-medium mt-1">$81 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=1"><img src="./images/listing1.png" class="w-72 h-72 rounded-xl" alt="Listing 1"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Rhinebeck, New York</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">85 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 3 - 7</p>
+            <p class="text-sm font-medium mt-1">$540 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=2"><img src="./images/listing2.png" class="w-72 h-72 rounded-xl" alt="Listing 2"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">24 miles away</p>
+            <p class="text-sm font-light text-gray-500">June 13 - 17</p>
+            <p class="text-sm font-medium mt-1">$85 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=3"><img src="./images/listing3.png" class="w-72 h-72 rounded-xl" alt="Listing 3"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">18 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 1 - 5</p>
+            <p class="text-sm font-medium mt-1">$128 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=4"><img src="./images/listing4.png" class="w-72 h-72 rounded-xl" alt="Listing 4"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">15 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 10 - 14</p>
+            <p class="text-sm font-medium mt-1">$69 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=5"><img src="./images/listing5.png" class="w-72 h-72 rounded-xl" alt="Listing 5"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Kerhonkson, New York</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">112 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 26 - 30</p>
+            <p class="text-sm font-medium mt-1">$207 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=6"><img src="./images/listing6.png" class="w-72 h-72 rounded-xl" alt="Listing 6"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">26 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 14 - 18</p>
+            <p class="text-sm font-medium mt-1">$85 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=7"><img src="./images/listing7.png" class="w-72 h-72 rounded-xl" alt="Listing 7"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Washington, District of Columbia</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">139 miles away</p>
+            <p class="text-sm font-light text-gray-500">Jun 18 - 22</p>
+            <p class="text-sm font-medium mt-1">$135 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=8"><img src="./images/listing8.png" class="w-72 h-72 rounded-xl" alt="Listing 8"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Princeton, New Jersey</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">45 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 12 - 16</p>
+            <p class="text-sm font-medium mt-1">$175 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=9"><img src="./images/listing9.png" class="w-72 h-72 rounded-xl" alt="Listing 9"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">25 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 20 - 24</p>
+            <p class="text-sm font-medium mt-1">$112 night</p>
+        </div>
+        <div class="flex-col h-96 w-72 mt-5">
+            <a href="info.html?id=10"><img src="./images/listing10.png" class="w-72 h-72 rounded-xl" alt="Listing 10"></a>
+            <div class="flex mt-2">
+                <p class="text-sm font-medium">Philadelphia, Pennsylvania</p>
+            </div>
+            <p class="text-sm font-light text-gray-500">29 miles away</p>
+            <p class="text-sm font-light text-gray-500">May 14 - 18</p>
+            <p class="text-sm font-medium mt-1">$81 night</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

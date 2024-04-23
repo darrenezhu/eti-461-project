@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="icon" type="image/x-icon" href="./images/projfavicon.png">
+    <style>
+        .fixed-right {
+            position: absolute;
+            top: 80%;
+            width: 400px;
+            right: 65px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ffffff;
+            padding: 20px;
+        }
+
+        .card-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            font-weight: bold;
+            font-size: 58 px;
+        }
+
+        .price-line {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price-line p {
+            margin-bottom: 0;
+        }
+
+        .btn-confirm {
+            background-color: #f87171;
+            border-color: #f87171;
+        }
+
+        .btn-confirm:hover {
+            background-color: #f03e3e;
+            border-color: #f03e3e;
+        }
+
+        .btn-confirm:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(248, 113, 113, 0.5);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .host-icon {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .host-icon img {
+            border-radius: 50%;
+        }
+
+        .container-fluid {
+            padding: 0 65px;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 20px;
+        }
+
+        .container-fluid-new {
+            padding: 0 65px;
+        }
+
+        .host-button {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        .auto-margin {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="grid grid-cols-3 px-16 items-center w-screen h-20 border-b-[1px]">
+            <a href="index.html" class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                    <path
+                        d="M19.006 3.705a.75.75 0 1 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6Z" />
+                    <path fill-rule="evenodd"
+                        d="M3.019 11.114 18 5.667v3.421l4.006 1.457a.75.75 0 1 1-.512 1.41l-.494-.18v8.475h.75a.75.75 0 0 1 0 1.5H2.25a.75.75 0 0 1 0-1.5H3v-9.129l.019-.007ZM18 20.25v-9.566l1.5.546v9.02H18Zm-9-6a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75H9Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="font-bold text-xl">Airdnd</span>
+            </a>
+            <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+                <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+                <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+                <button class="text-sm font-medium text-gray-500 px-2">Add guests</button>
+                <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+            </div>
+            <div class="flex justify-end items-center gap-8">
+                <button class="text-sm font-medium">Airdnd your home</button>
+                <span class="material-symbols-outlined">language</span>
+                <div class="flex justify-evenly items-center gap-2 rounded-full border shadow-md h-10 w-20">
+                    <i class="fa-solid fa-bars"></i>
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-[10px]"><i
+                            class="fa-solid fa-user"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid-new">
+        <div class="row">
+            <divc lass="col-12">
+                <div class="flex items-center">
+                    <p class="card-header">TESTING</p>
+                    <p class="listing-id text-white">TESTING</p>
+                </div>
+                <div>
+                    <img src="" alt="Listing Image" class="card-img-top">
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+
+                <div class="card-body">
+                    <div>
+                        <p class="font-bold prop-type prop-location">TESTING</p>
+                        <p class="listing-details">TESTING</p>
+                    </div>
+                    <div class="flex items-center gap-3 my-3">
+                        <button class="host-button">
+                            <span class="material-symbols-outlined">face</span>
+                        </button>
+                        <span class="font-bold host-info">TESTING</span>
+                    </div>
+                    <div class="border-b-[1px]"></div><br>
+                    <p class="description mb-3">
+                        TESTING
+                    </p>
+                    <div class="border-b-[1px]"></div><br>
+                    <h2 class="font-bold mb-2">What this place offers</h2>
+                    <ul class="ul-amenities">
+                        TESTING
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="fixed-right card card-body bg-white p-4 rounded-lg shadow-sm">
+                    <div class="flex">
+                        <p class="listing-price font-bold"><strong>TESTING</strong></p>
+                        <span class="pl-1">night</span>
+                    </div>
+                    <div>
+                        <label for="checkIn">Check-in:</label>
+                        <input type="date" id="checkIn" class="form-control">
+                        <label for="checkOut">Check-out:</label>
+                        <input type="date" id="checkOut" class="form-control">
+                    </div>
+                    <div>
+                        <label for="guests">Guests:</label>
+                        <select id="guests" class="form-control">
+                            TESTING
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-confirm w-full my-3">Reserve</button>
+                    <h2 class="font-bold mb-1">Price details</h2>
+                    <div class="flex">
+                        <p class="totalnight-price"></p>
+                        <p class="auto-margin">$0.00</p>
+                    </div>
+                    <div class="price-line">
+                        <p>Cleaning fee</p>
+                        <p class="cleaning-fee">$0.00</p>
+                    </div>
+                    <div class="price-line font-bold">
+                        <p>Total (USD)</p>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const listingID = new URLSearchParams(window.location.search).get('id');
+            if (listingID) {
+                fetch(`/api/listings/${listingID}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Error! status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        document.querySelector('.card-header').textContent = data.title;
+                        document.querySelector('.card-img-top').src = `./images/${data.image}`;
+                        document.querySelector('.prop-type').textContent = data.propertyType;
+                        document.querySelector('.prop-location').textContent = `${data.propertyType} in ${data.city}, ${data.state}`;
+                        document.querySelector('.listing-details').textContent = `${data.maxGuests} guests • 
+                        ${data.bedrooms} bedroom(s) • ${data.beds} bed(s) • ${data.baths} bath(s)`;
+                        document.querySelector('.listing-id').textContent = data.listingID;
+                        document.querySelector('.host-info').textContent = `Hosted by ${data.hostFName}`;
+                        document.querySelector('.description').textContent = data.description;
+                        document.querySelector('.listing-price').textContent = `$${data.pricing}`;
+                        document.querySelector('.totalnight-price').textContent = `$${data.pricing} x 4 nights`;
+                        document.querySelector('.cleaning-fee').textContent = `$${data.cleaningFee.toFixed(2)}`;
+
+                        // amenities list
+                        const amenitiesList = document.querySelector('.ul-amenities');
+                        amenitiesList.innerHTML = '';
+                        data.amenities.split(', ').forEach(amenity => {
+                            const li = document.createElement('li');
+                            li.textContent = amenity;
+                            amenitiesList.appendChild(li);
+                        });
+
+                        // guest dropdown
+                        const maxGuests = data.maxGuests;
+                        const guestSelect = document.getElementById('guests');
+                        guestSelect.innerHTML = '';
+                        for (let i = 1; i <= maxGuests; i++) {
+                            const option = document.createElement('option');
+                            option.value = i;
+                            option.textContent = i;
+                            guestSelect.appendChild(option);
+                        }
+
+                        // reserve button
+                        const reserveButton = document.querySelector('.btn-confirm');
+                        reserveButton.addEventListener('click', function () {
+                            // required!!!!!
+                            const checkInDate = document.getElementById('checkIn').value;
+                            const checkOutDate = document.getElementById('checkOut').value;
+                            const guests = document.getElementById('guests').value;
+                            const pricingText = document.querySelector('.listing-price').textContent;
+                            const pricing = pricingText.replace('$', '').trim();
+
+                            // other parameters
+                            const title = document.querySelector('.card-header').textContent;
+                            const cleaningFee = document.querySelector('.cleaning-fee').textContent.replace('$', '').trim();
+                            const propType = document.querySelector('.prop-type').textContent;
+                            
+                            const listingID = document.querySelector('.listing-id').textContent;
+
+                            const url = `checkout.html?checkIn=${encodeURIComponent(checkInDate)}
+                            &checkOut=${encodeURIComponent(checkOutDate)}&guests=${encodeURIComponent(guests)}
+                            &pricing=${encodeURIComponent(pricing)}&title=${encodeURIComponent(title)}
+                            &cleaningFee=${encodeURIComponent(cleaningFee)}&propType=${encodeURIComponent(propType)}
+                            &listingID=${encodeURIComponent(listingID)}`;
+                            window.location.href = url;
+                        });
+
+                        // calculating cost based on checkin and checkout
+                        const checkInInput = document.getElementById('checkIn');
+                        const checkOutInput = document.getElementById('checkOut');
+
+                        const updatePriceDetails = () => {
+                            const checkInDate = new Date(checkInInput.value);
+                            const checkOutDate = new Date(checkOutInput.value);
+                            const pricingPerNight = parseFloat(data.pricing);
+                            const timeDiff = Math.abs(checkOutDate - checkInDate);
+                            const nights = timeDiff / (1000 * 3600 * 24);
+                            const totalPrice = nights * pricingPerNight;
+                            const cleaningFee = parseFloat(data.cleaningFee);
+
+                            document.querySelector('.totalnight-price').textContent = `$${pricingPerNight} x ${nights} nights`;
+                            document.querySelector('.auto-margin').textContent = `$${totalPrice.toFixed(2)}`;
+                            document.querySelector('.price-line.font-bold p:nth-child(2)').textContent = `$${(totalPrice + cleaningFee).toFixed(2)}`;
+                        };
+
+                        checkInInput.addEventListener('change', updatePriceDetails);
+                        checkOutInput.addEventListener('change', updatePriceDetails);
+
+                    })
+                    .catch(error => {
+                        console.error('Error loading the listing details:', error);
+                        document.body.innerHTML = '<p>An error occurred while loading the listing details.</p>';
+                    });
+            } else {
+                document.body.innerHTML = '<p>ListingID is missing.</p>';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
